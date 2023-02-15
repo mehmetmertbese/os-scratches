@@ -19,7 +19,13 @@ int simple_init(void)
 {
     struct birthday *peter,*tom, *john, *mike, *sheldon;
     struct birthday *ptr;
-    printk(KERN_INFO "lOADING Module\n");
+    printk(KERN_INFO "Loading Module\n");
+
+    set_birthday(peter, 12, 3, 2000);
+    set_birthday(tom, 29, 5, 1997);
+    set_birthday(jhon, 1, 1, 1995);
+    set_birthday(mike, 2, 3, 1990);
+    set_birthday(sheldon, 4, 4, 1997);
 
     peter = kmalloc(sizeof(*peter), GFP_KERNEL);
     tom = kmalloc(sizeof(*tom), GFP_KERNEL);
