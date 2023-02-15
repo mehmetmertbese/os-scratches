@@ -38,7 +38,7 @@ void set_birthday(struct brithday *person, int day, int month, int year)
 }
 
 void simple_exit(void){
-    struct birthday *ptr, *nxt;
+    struct birthday *ptr, *next;
     printk(KERN_INFO "Removing Module\n");
 
     list_for_each_entry_safe(ptr, next, &birthday_list, list){
