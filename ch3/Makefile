@@ -1,4 +1,4 @@
 default:
-	gcc -o main.c main.o
+	gcc -o main.o main.c
 clean:
 	rm *.o
